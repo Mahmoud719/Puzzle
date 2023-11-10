@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+  <title>لعبة التفاعل</title>
+</head>
+<body>
+
+  <h1>لعبة التفاعل</h1>
+
+  <button onclick="startLevel(1)">المستوى الأول</button>
+  <button onclick="startLevel(2)">المستوى الثاني</button>
+  <button onclick="startLevel(3)">المستوى الثالث</button>
+  <button onclick="startLevel(4)">المستوى الرابع</button>
+
+  <script>
+    function startLevel(level) {
+      switch (level) {
+        case 1:
+          window.location.href = 'demo1.html'; // استبدل برابط الصفحة المستهدفة للمستوى الأول
+          break;
+        case 2:
+          window.location.href = 'demo2.html'; // استبدل برابط الصفحة المستهدفة للمستوى الثاني
+          break;
+        case 3:
+          window.location.href = 'demo3.html'; // استبدل برابط الصفحة المستهدفة للمستوى الثالث
+          break;
+        case 4:
+          window.location.href = 'demo4.html'; // استبدل برابط الصفحة المستهدفة للمستوى الرابع
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
